@@ -81,12 +81,7 @@ const loginToWhatsapp = async () => {
     while (true) {
     
       try {
-        await page.waitForSelector('._8nE1Y');
-
-        let count=0;
-
-        
-
+      await page.waitForSelector('._8nE1Y');
       const message = await page.evaluate(() => {
       const send = document.querySelectorAll('._8nE1Y');
       for (const element of send) {
